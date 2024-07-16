@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd ..
 # Clone the repository
 git clone https://github.com/xsghetti/hyprcrux
 

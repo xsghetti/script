@@ -4,7 +4,7 @@ cd yay-bin
 makepkg -si
 
 sudo pacman -S --needed - < ~/script/pacman.txt
-yay -S - < ~/script/yay.txt
+yay -S --needed - < ~/script/yay.txt
 
 cd ~/script/
 ./clone.sh

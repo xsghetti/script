@@ -52,3 +52,7 @@ case $answer in
     exit 1
     ;;
 esac
+
+echo ":: Preparing to Install HyprPM Plugins..."
+sleep 5
+~/script/hyprpm.sh

@@ -1,0 +1,14 @@
+aylurs-gtk-shell
+beeper-latest-bin
+betterdiscord-installer
+cava
+grimblast-git
+nwg-displays
+oxygen-cursors
+pyprland
+pywal-discord-git
+spotify
+tty-clock
+unimatrix-git
+vesktop
+wlogout

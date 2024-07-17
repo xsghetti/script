@@ -22,11 +22,11 @@ case $answer in
   [Yy]* )
     echo ":: Install Continuing..."
       #Copy mkinitcpio.conf
-      sudo cp -r ~/script/mkinitcpio.conf /etc/mkinitcpio.conf
+      sudo cp -r ~/script/src/mkinitcpio.conf /etc/mkinitcpio.conf
 
       #Make /etc/modprobe.d/nvidia.conf
       sudo touch /etc/modprobe.d/nvidia.conf
-      sudo cp -r ~/script/nvidia.conf /etc/modprobe.d/nvidia.conf
+      sudo cp -r ~/script/src/nvidia.conf /etc/modprobe.d/nvidia.conf
 
       sudo mkinitcpio -P
 
@@ -37,8 +37,8 @@ case $answer in
       makepkg -si
 
       #Download and Install packages
-      sudo pacman -S --needed - < ~/script/pacman.txt
-      yay -S --needed - < ~/script/yay.txt
+      sudo pacman -S --needed - < ~/script/src/pacman.txt
+      yay -S --needed - < ~/script/src/yay.txt
 
       #Clones Hyprcrux Repo and copies them to their correct locations.
       cd ~/script/
@@ -56,3 +56,27 @@ esac
 echo ":: Preparing to Install HyprPM Plugins..."
 sleep 5
 ~/script/hyprpm.sh
+
+echo ":: Preparing to Install Grub Theme"
+~/script/grub.sh
+
+echo ":: Preparing to Install SDDM Theme"
+~/script/sddm.sh
+
+
+cat << "EOF"
+                    You have succesfully installed                     
+-----------------------------------------------------------------------
+ ██░ ██▓██   ██▓ ██▓███   ██▀███   ▄████▄   ██▀███   █    ██ ▒██   ██▒
+▓██░ ██▒▒██  ██▒▓██░  ██▒▓██ ▒ ██▒▒██▀ ▀█  ▓██ ▒ ██▒ ██  ▓██▒▒▒ █ █ ▒░
+▒██▀▀██░ ▒██ ██░▓██░ ██▓▒▓██ ░▄█ ▒▒▓█    ▄ ▓██ ░▄█ ▒▓██  ▒██░░░  █   ░
+░▓█ ░██  ░ ▐██▓░▒██▄█▓▒ ▒▒██▀▀█▄  ▒▓▓▄ ▄██▒▒██▀▀█▄  ▓▓█  ░██░ ░ █ █ ▒ 
+░▓█▒░██▓ ░ ██▒▓░▒██▒ ░  ░░██▓ ▒██▒▒ ▓███▀ ░░██▓ ▒██▒▒▒█████▓ ▒██▒ ▒██▒
+ ▒ ░░▒░▒  ██▒▒▒ ▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ░▒ ▒  ░░ ▒▓ ░▒▓░░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░
+ ▒ ░▒░ ░▓██ ░▒░ ░▒ ░       ░▒ ░ ▒░  ░  ▒     ░▒ ░ ▒░░░▒░ ░ ░ ░░   ░▒ ░
+ ░  ░░ ░▒ ▒ ░░  ░░         ░░   ░ ░          ░░   ░  ░░░ ░ ░  ░    ░  
+ ░  ░  ░░ ░                 ░     ░ ░         ░        ░      ░    ░  
+        ░ ░                       ░                                   
+-----------------------------------------------------------------------
+                                Enjoy :)
+EOF

@@ -70,7 +70,6 @@ unzip
 vim
 waybar
 wget
-wine
 wireless_tools
 wireplumber
 wl-clipboard

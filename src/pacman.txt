@@ -47,6 +47,7 @@ npm
 nvidia-dkms
 nwg-look
 obs-studio
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack

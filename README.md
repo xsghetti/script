@@ -19,7 +19,7 @@
 > Feel free to change which drivers you use in ```src/pacman.txt```
 
 
-    git clone https://github/com/xsghetti/script
+    git clone https://github.com/xsghetti/script
 
 <br>
 

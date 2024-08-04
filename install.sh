@@ -45,10 +45,13 @@ case $answer in
       ./clone.sh
       
       
-      echo ":: Preparing to Install HyprPM Plugins..."
-      sleep 5
-      ~/script/hyprpm.sh
+      #echo ":: Preparing to Install HyprPM Plugins..."
+      #sleep 5
+      #~/script/hyprpm.sh
       
+      echo ":: Preparing to Restore ZSH"
+      ~/script/zsh.sh
+
       echo ":: Preparing to Install Grub Theme"
       ~/script/grub.sh
       

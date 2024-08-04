@@ -59,7 +59,7 @@ case $answer in
       ~/script/sddm.sh
       
       echo ":: Rebooting"
-      sleep 15
+      sleep 5
       sudo systemctl enable sddm && sudo systemctl start sddm
     ;;
     [Nn]* )

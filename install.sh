@@ -60,7 +60,7 @@ case $answer in
       
       echo ":: Rebooting"
       sleep 15
-      sudo reboot
+      sudo systemctl enable sddm && sudo systemctl start sddm
     ;;
     [Nn]* )
         echo ":: Exiting..."

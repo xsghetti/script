@@ -60,7 +60,7 @@ case $answer in
       
       echo ":: Rebooting"
       sleep 5
-      sudo systemctl enable bluetooth && sudo systemctl start blueooth
+      sudo systemctl enable bluetooth && sudo systemctl start bluetooth
       sudo systemctl enable sddm && sudo systemctl start sddm
     ;;
     [Nn]* )

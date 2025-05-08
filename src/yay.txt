@@ -13,3 +13,4 @@ unimatrix-git
 vesktop
 wlogout
 hyprpaper
+python-pywal16

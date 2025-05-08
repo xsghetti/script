@@ -12,3 +12,4 @@ tty-clock
 unimatrix-git
 vesktop
 wlogout
+hyprpaper

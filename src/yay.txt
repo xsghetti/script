@@ -1,5 +1,3 @@
-aylurs-gtk-shell
-beeper-latest-bin
 betterdiscord-installer
 cava
 grimblast-git

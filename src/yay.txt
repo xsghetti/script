@@ -45,7 +45,6 @@ network-manager-applet
 networkmanager
 nodejs
 npm
-nvidia-open-dkms
 nwg-displays
 nwg-look
 obs-studio

@@ -66,7 +66,6 @@ sddm
 slurp
 smartmontools
 sof-firmware
-steam
 swappy
 swaync
 swww
@@ -92,4 +91,3 @@ pyprland
 python-pywalfox
 terminaltexteffects-git
 ventoy-bin
-steam

@@ -76,10 +76,16 @@ case $answer in
       ~/script/grub.sh
       ~/script/greetd.sh
       
-      echo ":: Rebooting"
       sudo systemctl enable bluetooth && sudo systemctl start bluetooth
       sudo systemctl enable greetd && sudo systemctl start greetd
-      sleep 1 && reboot
+
+      read -p ":: Installation complete. Reboot now? (Y/n) " reboot_answer
+      if [[ -z "$reboot_answer" || "$reboot_answer" =~ ^[Yy]$ ]]; then
+          echo ":: Rebooting..."
+          sleep 1 && reboot
+      else
+          echo ":: Skipping reboot. Please reboot manually when ready."
+      fi
     ;;
     [Nn]* )
         echo ":: Exiting..."

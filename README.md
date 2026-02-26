@@ -34,6 +34,6 @@
 
 <div align="center">
   
-![](https://dcbadge.limes.pink/api/shield/146459065432801280)
+![](https://dcbadge.limes.pink/api/shield/146459065432801280?theme=clean)
 
 </div>

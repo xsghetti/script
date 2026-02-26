@@ -53,12 +53,16 @@ case $answer in
       
       sudo mkinitcpio -P
       
-      #Download and Install Yay
-      echo ":: Installing Yay AUR helper..."
-      sudo pacman -S --needed git base-devel
-      git clone https://aur.archlinux.org/yay-bin.git
-      cd yay-bin
-      makepkg -si
+      #Download and Install Yay if not already present
+      if ! command -v yay &>/dev/null; then
+          echo ":: Installing Yay AUR helper..."
+          sudo pacman -S --needed git base-devel
+          git clone https://aur.archlinux.org/yay-bin.git
+          cd yay-bin
+          makepkg -si
+      else
+          echo ":: Yay already installed, skipping..."
+      fi
       
       #Download and Install packages
       echo ":: Installing packages..."

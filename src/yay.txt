@@ -54,7 +54,6 @@ pipewire-pulse
 polkit-kde-agent
 power-profiles-daemon
 python-pip
-python-pywal
 qt5-wayland
 qt5ct
 qt6-wayland

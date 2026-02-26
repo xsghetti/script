@@ -29,7 +29,7 @@ PYTHONPATH=~/script/src/tte python -m terminaltexteffects beams << "EOF"
 -----------------------------------------------------------------------
 EOF
 
-read -p ":: Apply Hyprcrux dotfiles? (Y/n) " answer
+read -p ":: Tryna install the Hyprcrux dotfiles only? (Y/n) " answer
 
 # Set default to Yes if empty
 if [[ -z "$answer" ]]; then

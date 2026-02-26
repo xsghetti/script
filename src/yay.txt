@@ -91,4 +91,4 @@ terminaltexteffects-git
 ventoy-bin
 yazi
 cliphist
-
+otf-departure-mono

@@ -152,7 +152,7 @@ case $mode in
         cp -r ~/script/src/powerlevel10k ~/.oh-my-zsh/custom/themes/
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-        git clone https://github.com/lincheney/fzf-tab-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab-completion
+        git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
         cp ~/hyprcrux/src/.zshrc ~/
         cp ~/hyprcrux/src/.p10k.zsh ~/
         sudo usermod -s $(which zsh) $USER

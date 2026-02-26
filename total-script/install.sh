@@ -25,9 +25,9 @@ PYTHONPATH=~/script/src/tte python -m terminaltexteffects beams << "EOF"
 EOF
 
 echo ""
-echo "  Select an option:"
-echo "  1) Total Install  (Nvidia, packages, dotfiles, grub, greetd)"
-echo "  2) Dotfiles Only  (dotfiles + zsh + noctalia-shell-git)"
+echo "  :: Select an option:"
+echo "  1) Total Install"
+echo "  2) Dotfiles Only"
 echo ""
 read -p "  Enter choice [1/2]: " mode
 
@@ -35,7 +35,7 @@ case $mode in
     1)
         echo ""
         echo ":: WARNING! This script is meant for Nvidia users only!"
-        echo ":: It installs the nvidia-dkms and nvidia-utils packages."
+        echo ":: It no longer installs the nvidia-dkms and nvidia-utils packages, but it does apply Nvidia modules."
         read -p ":: Continue? (Y/n) " confirm
         [[ -z "$confirm" ]] && confirm="Y"
         if [[ ! "$confirm" =~ ^[Yy]$ ]]; then

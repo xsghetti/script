@@ -62,7 +62,7 @@ case $answer in
       
       #Download and Install packages
       echo ":: Installing packages..."
-      yay -S --needed - < ~/script/src/yay.txt
+      yay -S --needed --noconfirm - < ~/script/src/yay.txt
       
       #Clones Hyprcrux Repo and copies them to their correct locations.
       echo ":: Cloning Hyprcrux configuration..."

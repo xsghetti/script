@@ -1,0 +1,3 @@
+[console_scripts]
+terminaltexteffects = terminaltexteffects.__main__:main
+tte = terminaltexteffects.__main__:main

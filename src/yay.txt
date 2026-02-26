@@ -13,7 +13,6 @@ cpio
 discord
 dkms
 dolphin
-dunst
 efibootmgr
 firefox
 flatpak
@@ -91,3 +90,5 @@ pyprland
 python-pywalfox
 terminaltexteffects-git
 ventoy-bin
+yazi
+cliphist

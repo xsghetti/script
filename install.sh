@@ -8,28 +8,11 @@ check_root() {
     fi
 }
 
-# Function to install pip if not present
-install_pip() {
-    if ! command -v pip &> /dev/null; then
-        echo "pip not found. Installing python-pip..."
-        sudo pacman -S --needed --noconfirm python-pip
-    fi
-}
-
-# Function to install terminaltexteffects
-install_tte() {
-    if ! command -v tte &> /dev/null; then
-        pip install terminaltexteffects --break-system-packages &> /dev/null
-    fi
-}
-
 # Check prerequisites
 check_root
-install_pip
-install_tte
 
 # Display ASCII art with effects
-tte beams << "EOF"
+PYTHONPATH=~/script/src/tte python -m terminaltexteffects beams << "EOF"
 -----------------------------------------------------------------------
  ██░ ██▓██   ██▓ ██▓███   ██▀███   ▄████▄   ██▀███   █    ██ ▒██   ██▒
 ▓██░ ██▒▒██  ██▒▓██░  ██▒▓██ ▒ ██▒▒██▀ ▀█  ▓██ ▒ ██▒ ██  ▓██▒▒▒ █ █ ▒░

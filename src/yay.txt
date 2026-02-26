@@ -91,3 +91,5 @@ yazi
 cliphist
 otf-departure-mono
 oxygen-cursors
+jq
+grimblast

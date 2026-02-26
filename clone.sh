@@ -11,3 +11,7 @@ cp -r ~/hyprcrux/.config/* ~/.config/
 sudo cp -r ~/hyprcrux/src/icons/* /usr/share/icons/
 sudo cp -r ~/hyprcrux/src/fonts/* /usr/share/fonts/
 sudo cp -r ~/hyprcrux/src/themes/* /usr/share/themes/
+
+# Install dashboard script
+sudo cp ~/hyprcrux/dashboard.sh /usr/local/bin/dashboard
+sudo chmod +x /usr/local/bin/dashboard

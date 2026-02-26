@@ -92,3 +92,4 @@ ventoy-bin
 yazi
 cliphist
 fzf-tab-completion-git
+otf-departure-mono

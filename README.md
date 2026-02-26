@@ -15,8 +15,8 @@
     
 > [!Warning]
 > This script is meant for Arch, Hyprland & Nvidia!<br>
-> ```nvidia-dkms``` and ```nvidia-utils``` because the proprietary drivers fuck. (post 555 obviously)<br>
-> Feel free to change which drivers you use in ```src/pacman.txt```
+> This script no longer downloads ```nvidia-dkms``` and ```nvidia-utils```<br>
+> However, it does set Nvidia modules to the kernel.<br>
 
 
     git clone https://github.com/xsghetti/hyprcrux-install

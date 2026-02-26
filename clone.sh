@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ..
 # Clone the repository
-sudo rm -r ~/hyprcrux/
+[ -d ~/hyprcrux ] && sudo rm -r ~/hyprcrux/
 git clone https://github.com/xsghetti/hyprcrux
 
 # Copy the configuration files

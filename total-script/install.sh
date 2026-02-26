@@ -68,8 +68,12 @@ case $mode in
 
         echo ":: Cloning Hyprcrux configuration..."
         cd ~/script/
-        [ -d ~/hyprcrux ] && sudo rm -r ~/hyprcrux/
-        git clone https://github.com/xsghetti/hyprcrux ~/hyprcrux
+        if [ -d ~/hyprcrux ]; then
+            echo ":: hyprcrux already cloned, pulling latest changes..."
+            git -C ~/hyprcrux pull
+        else
+            git clone https://github.com/xsghetti/hyprcrux ~/hyprcrux
+        fi
         cp -r ~/hyprcrux/.config/* ~/.config/
         sudo cp -r ~/hyprcrux/src/icons/* /usr/share/icons/
         sudo cp -r ~/hyprcrux/src/fonts/* /usr/share/fonts/
@@ -129,8 +133,12 @@ case $mode in
         yay -S --needed --noconfirm noctalia-shell-git
 
         echo ":: Cloning Hyprcrux configuration..."
-        [ -d ~/hyprcrux ] && sudo rm -r ~/hyprcrux/
-        git clone https://github.com/xsghetti/hyprcrux ~/hyprcrux
+        if [ -d ~/hyprcrux ]; then
+            echo ":: hyprcrux already cloned, pulling latest changes..."
+            git -C ~/hyprcrux pull
+        else
+            git clone https://github.com/xsghetti/hyprcrux ~/hyprcrux
+        fi
         cp -r ~/hyprcrux/.config/* ~/.config/
         sudo cp -r ~/hyprcrux/src/icons/* /usr/share/icons/
         sudo cp -r ~/hyprcrux/src/fonts/* /usr/share/fonts/

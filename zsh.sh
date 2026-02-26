@@ -15,4 +15,4 @@ cp $SOURCE_DIR/.zshrc ~/
 
 cp $SOURCE_DIR/.p10k.zsh ~/
 
-chsh -s $(which zsh)
+sudo usermod -s $(which zsh) $USER

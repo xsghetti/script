@@ -90,3 +90,4 @@ ventoy-bin
 yazi
 cliphist
 otf-departure-mono
+oxygen-cursors

@@ -15,7 +15,7 @@
     
 > [!Warning]
 > This script is meant for Arch, Hyprland & Nvidia!<br>
-> This script no longer downloads ```nvidia-dkms``` and ```nvidia-utils```<br>
+> This script no longer downloads ```nvidia-dkms``` and ```nvidia-utils```.<br>
 > However, it does set Nvidia modules to the kernel.<br>
 
 

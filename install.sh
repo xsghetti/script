@@ -90,7 +90,7 @@ prompt_finish() {
     case $finish_choice in
         1)
             echo ":: Starting Hyprland..."
-            start-hyprland
+            cd "$HOME" && exec Hyprland
             ;;
         2)
             echo ":: Rebooting..."
@@ -98,7 +98,7 @@ prompt_finish() {
             ;;
         *)
             echo ":: Exiting. Enjoy Hyprcrux!"
-            exit 0
+            cd "$HOME" && exec zsh -l
             ;;
     esac
 }

@@ -78,19 +78,33 @@ setup_zsh() {
 
 prompt_finish() {
     local msg="$1"
+    local in_hyprland=false
+    [[ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]] && in_hyprland=true
+
     echo ""
     echo ":: $msg"
     echo "  :: What would you like to do?"
-    echo "  1) Start Hyprland"
+    if ! $in_hyprland; then
+        echo "  1) Start Hyprland"
+    fi
     echo "  2) Reboot"
     echo "  3) Exit"
     echo ""
-    read -p "  Enter choice [1/2/3]: " finish_choice
+    if $in_hyprland; then
+        read -p "  Enter choice [2/3]: " finish_choice
+    else
+        read -p "  Enter choice [1/2/3]: " finish_choice
+    fi
 
     case $finish_choice in
         1)
-            echo ":: Starting Hyprland..."
-            cd "$HOME" && exec Hyprland
+            if $in_hyprland; then
+                echo ":: Already inside a Hyprland session. Reboot or exit instead."
+                prompt_finish "$msg"
+            else
+                echo ":: Starting Hyprland..."
+                cd "$HOME" && exec start-hyprland
+            fi
             ;;
         2)
             echo ":: Rebooting..."

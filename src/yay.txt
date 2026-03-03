@@ -93,3 +93,7 @@ otf-departure-mono
 oxygen-cursors
 jq
 grimblast
+starship
+eza
+bat
+fastfetch
